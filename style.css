@@ -241,7 +241,7 @@ h1, h2, p, a {
 
 .chat-button a {
   display: inline-block;
-  background-color: #0084ff;
+  background-color: #ffffff;
   color: white;
   border-radius: 50%;
   width: 60px;
@@ -335,5 +335,31 @@ h1, h2, p, a {
     opacity: 1;
   }
 }
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+.chat-button a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.chat-button .chat-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 👈 สำคัญมาก: ปรับขนาดโดยไม่บิดเบี้ยว */
+  display: block;
+}
+
 
 
